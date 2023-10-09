@@ -89,6 +89,20 @@
         app:layout_constraintTop_toBottomOf="@+id/add_btn"
         app:layout_constraintVertical_bias="0.878" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_frg_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="110dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/next_frg_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_btn"
+        tools:itemCount="1"
+        tools:listitem="@layout/person_item_layout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

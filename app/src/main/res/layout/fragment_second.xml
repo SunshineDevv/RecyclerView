@@ -27,20 +27,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.007" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_frg_1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginHorizontal="4dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginBottom="100dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toTopOf="@+id/button_back"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:itemCount="1"
-        tools:listitem="@layout/person_item_layout" />
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_back"

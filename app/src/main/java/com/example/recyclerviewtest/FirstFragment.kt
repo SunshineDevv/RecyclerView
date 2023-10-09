@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import com.example.recyclerviewtest.databinding.FragmentFirstBinding
 
 class FirstFragment : Fragment() {
@@ -31,7 +32,9 @@ class FirstFragment : Fragment() {
         binding?.addBtn?.setOnClickListener {
             addNewPerson()
         }
-
+        binding?.nextFrgBtn?.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_firstFragment_to_secondFragment)
+        }
     }
 
     private fun initial(){

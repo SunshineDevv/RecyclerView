@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import com.example.recyclerviewtest.databinding.FragmentSecondBinding
 
 
@@ -24,6 +25,9 @@ class SecondFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding?.buttonBack?.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_secondFragment_to_firstFragment)
+        }
     }
 
     override fun onDestroy() {
